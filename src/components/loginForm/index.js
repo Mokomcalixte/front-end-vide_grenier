@@ -23,7 +23,7 @@ const LoginForm = () => {
             console.log(response.headers['authorization'])
             localStorage.setItem('token', response.headers['authorization'])
             // Rediriger vers la page home après une connexion réussie
-            navigate('/');
+            navigate('/home');
         }).catch(error => {
             console.error('Error during login:', error);
                 console.log('Login failed. Error:', error); // Ajoutez cette ligne pour afficher les erreurs côté client
